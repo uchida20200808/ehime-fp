@@ -201,6 +201,28 @@ a {
   }
 }
 
+/* 大きな背景画像 */
+.big-bg {
+  background-size: cover;
+  background-position:  center center;
+  background-repeat: no-repeat;
+}
+#eye-catch {
+  background-image: url(../images/fp-consult.png);
+  min-height: 30vh;
+}
+#eye-catch .page-title {
+  font-size: 5rem;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  #eye-catch .page-title {
+    font-size: 3rem;
+  }
+}
+
 
 /* MAIN */
 .main-content {
@@ -362,7 +384,7 @@ main span {
 .call-btn {
   font-family:Arial, Helvetica, sans-serif;
   height: 100px;
-  margin-top: 48px;
+  /* margin: 16px auto; */
   padding: 8px 32px;
   background: tomato;
   color: white;
@@ -384,6 +406,7 @@ main span {
 }
 .btn-set {
   text-align: center;
+  margin: 16px auto;
 }
 
 
